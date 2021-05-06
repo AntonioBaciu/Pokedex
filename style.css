@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input-wrap,
+.output-wrap {
+  margin: 20px 20px;
+}
+
+.output-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+  width: 750px;
+  background-color: rgb(255, 0, 76);
+}
+
+#output_name,
+#output_id {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-size: 30px;
+}

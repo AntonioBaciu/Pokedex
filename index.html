@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Button + Input -->
+    <div class="input-wrap">
+      <form action="#" method="post">
+        <div class="field">
+          <label for="pokemon-id">Pokemon ID:</label>
+          <input type="text" name="pokemon-id" id="input" />
+        </div>
+        <div class="actions">
+          <button type="button" id="run">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="output-wrap">
+      <p id="output_name"></p>
+      <p id="output_id"></p>
+      <img src="#" alt="" id="output_img" />
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
