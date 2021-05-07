@@ -2,35 +2,189 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", sans-serif;
 }
 
-.input-wrap,
-.output-wrap {
-  margin: 20px 20px;
+body {
+  background-image: url(img/bg-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-wrap {
+  display: flex;
+  height: 400px;
+  width: 900px;
+  background-color: gray;
+  margin: auto;
+  margin-top: 350px;
+  border-radius: 55px;
+}
+
+.left {
+  height: inherit;
+  width: 170px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #20b2aa;
+}
+
+.center {
+  height: inherit;
+  width: 560px;
+  background-color: black;
+}
+
+.screen {
+  height: 380px;
+  width: 540px;
+  background-image: url(img/bg.png);
+  background-size: cover;
+  margin: auto;
+  margin-top: 9px;
+}
+
+.right {
+  height: inherit;
+  width: 170px;
+  background-color: #ff4554;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /* margin-left: 60px; */
+}
+
+.btn-wrap {
+  height: 380px;
+  width: 180px;
+  margin: auto;
+  margin-top: 9px;
+}
+
+.btn-round__wrap {
+  height: 20%;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.btn-round {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 100px;
+}
+
+.btn-round__inner {
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px;
+  background: linear-gradient(-112deg, rgb(76, 76, 76), rgb(1, 1, 2));
+  border-radius: 100px;
+}
+
+.dpad_wrap {
+  display: flex;
+  height: 130px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.d-btn {
+  height: 37px;
+  width: 37px;
+  background: linear-gradient(-112deg, rgb(76, 76, 76), rgb(1, 1, 2));
+  border-radius: 100%;
+  color: #fff;
+}
+
+.dpad_top,
+.dpad_bot,
+.dpad_left,
+.dpad_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dpad_top {
+  opacity: 0;
+}
+
+.dpad_bot {
+  align-self: flex-end;
+}
+
+.dpad_left {
+  align-self: center;
+}
+
+.dpad_right {
+  align-self: center;
+}
+
+.second {
+  margin-top: 40px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.input-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+}
+
+#input,
+#run {
+  height: 20px;
+  margin: 5px;
+}
+
+.main_wrap {
   height: 300px;
-  width: 750px;
-  background-color: rgb(255, 0, 76);
-  margin-left: 20px;
 }
 
 .output-wrap,
 .moves-wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  height: 100px;
-  width: 700px;
 }
 
 .moves_item {
-  font-size: 20px;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(11, 156, 156);
+  color: white;
+  margin-top: 5px;
+  display: none;
 }
 #output_name,
 #output_id,
 #output_moves {
-  font-size: 30px;
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
 }
+
+#output_name,
+#output_id {
+  width: 100%;
+  margin: 10px;
+}
+
+.moves_item {
+  padding: 10px;
+}
+

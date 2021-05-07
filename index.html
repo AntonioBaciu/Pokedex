@@ -4,39 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokedex</title>
   </head>
   <body>
-    <!-- Button + Input -->
-    <div class="input-wrap">
-      <form action="#" method="post">
-        <div class="field">
-          <label for="pokemon-id">Pokemon ID:</label>
-          <input type="text" name="pokemon-id" id="input" />
-        </div>
-        <div class="actions">
-          <button type="button" id="run">Search</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Output  -->
     <div class="main-wrap">
-      <div class="output-wrap">
-        <p id="output_name"></p>
-        <p id="output_id"></p>
-        <img src="#" alt="" id="output_img" />
-        <p id="output_moves"></p>
+      <div class="left">
+        <!-- Left Buttons START -->
+        <div class="btn-wrap">
+          <div class="btn-round__wrap">
+            <div class="btn-round">
+              <div class="btn-round__inner"></div>
+            </div>
+          </div>
+          <div class="dpad_wrap">
+            <div class="dpad_top d-btn">X</div>
+            <div class="dpad_right d-btn">Y</div>
+            <div class="dpad_bot d-btn">B</div>
+            <div class="dpad_left d-btn">A</div>
+          </div>
+        </div>
+        <!-- Left Buttons END -->
       </div>
+      <div class="center">
+        <div class="screen">
+          <!-- Input -->
+          <div class="input-wrap">
+            <form action="#" method="post">
+              <div class="field">
+                <img class="logo" src="img/pokeball.png" alt="" />
+                <input
+                  type="text"
+                  name="pokemon-id"
+                  id="input"
+                  placeholder="Pokemon name or ID"
+                />
+                <button type="button" id="run">Search</button>
+              </div>
+            </form>
+          </div>
+          <!-- Output  -->
+          <div class="main_wrap">
+            <div class="output-wrap">
+              <img src="#" alt="" id="output_img" />
+              <p id="output_name"></p>
+              <p id="output_id"></p>
 
-      <!-- Moves -->
-      <div class="moves-wrap">
-        <div class="moves_item" id="move_1"></div>
-        <div class="moves_item" id="move_2"></div>
-        <div class="moves_item" id="move_3"></div>
-        <div class="moves_item" id="move_4"></div>
-        <div class="moves_item" id="move_5"></div>
+              <p id="output_moves"></p>
+            </div>
+
+            <!-- Moves -->
+            <div class="moves-wrap">
+              <div class="moves_item" id="move_1"></div>
+              <div class="moves_item" id="move_2"></div>
+              <div class="moves_item" id="move_3"></div>
+              <div class="moves_item" id="move_4"></div>
+              <div class="moves_item" id="move_5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="btn-wrap">
+          <div class="dpad_wrap second">
+            <div class="dpad_top d-btn">X</div>
+            <div class="dpad_right d-btn">Y</div>
+            <div class="dpad_bot d-btn">B</div>
+            <div class="dpad_left d-btn">A</div>
+          </div>
+          <div class="btn-round__wrap">
+            <div class="btn-round">
+              <div class="btn-round__inner"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
