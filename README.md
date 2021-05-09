@@ -1,4 +1,4 @@
-# Title: Pokedex
+# Title: Pokédex
 # Website [LINK](https://antoniobaciu.github.io/Pokedex/)
 ![](img/website-preview.png)
 
